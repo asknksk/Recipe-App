@@ -1,13 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GlobalStyles } from "../components/globalStyles/Global.styles";
 import Navbar from "../components/nav/Navbar";
-
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import Login from "../pages/login/Login";
 const AppRouter = () => {
   return (
     <BrowserRouter>
+      <GlobalStyles />
       <Navbar />
-      <GlobalStyles/>
       <Routes>
-        <Route />
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
