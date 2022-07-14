@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Flex from "../../components/globalStyles/Flex";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import Flex from '../../components/globalStyles/Flex';
+import { Link } from 'react-router-dom';
 
 const Nav = styled(Flex)`
   padding: 1rem 2rem;
@@ -32,7 +32,7 @@ export const Menu = styled(Flex)`
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     flex-direction: column;
     width: 100%;
-    max-height: ${({ isOpen }) => (isOpen ? "400px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? '400px' : '0')};
     overflow: hidden;
     transition: max-height 0.3s ease-in;
   }

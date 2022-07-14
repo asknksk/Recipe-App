@@ -1,17 +1,19 @@
-import LoginStyle, {
+import {
   FormContainer,
   Header,
   LoginContainer,
-  StyledButton,
   StyledForm,
   StyledImg,
   StyledInput,
+  StyledButton,
 } from "./Login.style";
+
 import mealSvg from "../../assets/meal.svg";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+
   const userInfo = {
     username: "ahmet",
   };
@@ -24,8 +26,8 @@ const Login = () => {
   return (
     <LoginContainer>
       <FormContainer>
-        <StyledImg scr={mealSvg} />
-        <Header>{"<CW/> "}Recipe</Header>
+        <StyledImg src={mealSvg} />
+        <Header>{"<CW/>"}Recipe</Header>
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" placeholder="username" required />
           <StyledInput type="password" placeholder="password" required />
