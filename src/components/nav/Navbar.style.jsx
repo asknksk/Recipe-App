@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Flex from "../globalStyles/Flex";
+import Flex from "../../components/globalStyles/Flex";
 import { Link } from "react-router-dom";
 
-export const NavBar = styled(Flex)`
+const Nav = styled(Flex)`
   padding: 1rem 2rem;
   background: ${({ theme }) => theme.colors.navbarBgColor};
 `;
@@ -19,15 +19,23 @@ export const Logo = styled(Link)`
   }
 `;
 
+export const Hamburger = styled.div`
+  display: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.mainColor};
+  @media (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: block;
+  }
+`;
+
 export const Menu = styled(Flex)`
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     flex-direction: column;
     width: 100%;
-    max-height: ${({ isOpen }) => {
-      isOpen ? "400px" : "0";
-    }};
+    max-height: ${({ isOpen }) => (isOpen ? "400px" : "0")};
     overflow: hidden;
-  } ;
+    transition: max-height 0.3s ease-in;
+  }
 `;
 
 export const MenuLink = styled(Link)`
@@ -41,15 +49,9 @@ export const MenuLink = styled(Link)`
     color: ${({ theme }) => theme.colors.mainColor};
     font-weight: bold;
   }
-`;
-
-export const Hamburger = styled.div`
-  display: none;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.mainColor};
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
-    display: block;
-  } ;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
+    width: 100%;
+  }
 `;
-
-export default NavBar;
+export default Nav;
