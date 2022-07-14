@@ -28,7 +28,6 @@ const Home = () => {
       alert("Please Enter your meal");
     }
   };
-  console.log(recipes);
   return (
     <div>
       <Header
