@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
-import HomeStyle, { HeaderText, HomeImg, ImgDiv } from "./Home.style";
+import { useState } from "react";
+import { HeaderText, HomeImg, ImgDiv } from "./Home.style";
 import Header from "../../components/header/Header";
 import Cards from "../../components/cards/Cards";
 import homeSvg from "../../assets/home.svg";

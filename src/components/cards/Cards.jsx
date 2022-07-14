@@ -1,10 +1,4 @@
-import CardsStyle, {
-  Button,
-  Card,
-  Header,
-  Image,
-  MainContainer,
-} from "./Cards.style";
+import { Button, Card, Header, Image, MainContainer } from "./Cards.style";
 import defaultImage from "../../assets/default-image.jpg";
 import { useNavigate } from "react-router";
 
