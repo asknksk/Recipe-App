@@ -21,6 +21,7 @@ This project is a comprehensive recipe project I made to learn React Router. I u
 
 ## Project Link
 
-<a href="" target="_blank">Vercel Link</a> to access my project.
+<a href="https://recipe-app-react-router.netlify.app/" target="_blank">Netlify Link</a> to access my project.
+<a href="https://recipe-app-omega-three.vercel.app/" target="_blank">Vercel Link</a> to access my project.
 
 <hr>
