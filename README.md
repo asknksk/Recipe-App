@@ -15,7 +15,7 @@ This project is a comprehensive recipe project I made to learn React Router. I u
 
 ## Project Preview
 
-![](https://github.com/asknksk/Recipe-App/tree/master/src/assets/Preview.gif)
+![](https://github.com/asknksk/Recipe-App/blob/master/src/assets/Preview.gif)
 
 <hr>
 
